@@ -11182,12 +11182,12 @@ a {
   text-decoration: none;
 }
 
-.headline {
+.header-bg {
   background-image: url(/imgs/Header-llustration.svg);
-  background-position: center center;
+  background-position:  center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 112vh;
+  height: 100ch;
 }
 
 .headline h2 {
@@ -11208,11 +11208,11 @@ li {
 }
 
 .px-3 {
-  padding: 0 6rem !important;
+  padding: 0 17rem !important;
 }
 
 .pt-big {
-  padding-top: 6rem !important;
+  padding-top: 11rem !important;
 }
 .project-card {
   border: 1px solid #d0d9d4;

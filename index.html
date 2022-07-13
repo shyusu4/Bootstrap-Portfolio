@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
   </head>
   <body>
-    <header>
+    <header class="header-bg">
       <nav class="navbar navbar-light pt-3">
         <ul class="nav text-center">
           <li class="nav-items px-2"><a href=""> Portfolio</a></li>
@@ -15,7 +15,7 @@
           <li class="nav-items px-2"><a href="">Contact</a></li>
         </ul>
       </nav>
-    </header>
+    
     <section class="container-fluid headline text-center pt-big">
       <div class="container flex-column justify-content-center">
         <h1 class="p-2">Hey there. I'm Alex.</h1>
@@ -42,8 +42,9 @@
         </ul>
       </div>
     </section>
-    <section class="container">
-
+  </header>
+    <section class="container text-center mb-5">
+      <h2 class="mb-5">My recent work</h2>
       <div class="row mb-5 justify-content-center">
 
         <div class="col-md-4 rounded card mx-2 " style="width: 18rem;">
@@ -51,7 +52,7 @@
 
           <div class="card-body">
             <h3 class=>Multi-Post Stories<br>Gain+Glory<br></h3>
-          <ul class="">
+          <ul class="list-inline">
             <li class="px-2 mx-2">Ruby on Rails</li>
             <li class="px-2 mx-2">Css</li>
             <li class="px-2 mx-2">Javascrip</li>
@@ -113,14 +114,14 @@
             <img src="/imgs/dance.png" class="card-img-top" alt="project-image">
             
             <div class="card-body">
-              <h3 class=>Multi-Post Stories<br>Gain+Glory<br></h3>
-            <ul class="">
-              <li class="px-2 mx-2">Ruby on Rails</li>
-              <li class="px-2 mx-2">Css</li>
-              <li class="px-2 mx-2">Javascrip</li>
-              <li class="px-2 mx-2">Html</li>
-            </ul>
-            <button class="btn btn-success mb-3" >See project</button>
+              <h3 class="">Multi-Post Stories<br>Gain+Glory<br></h3>
+            <span class="mb-3"> 
+              <span class="badge bg-light  ">Ruby on Rails</span>
+              <span class="badge bg-light ">Css</span>
+              <span class=" badge bg-light  ">Javascript</span>
+              <sp class=" badge bg-light ">Html</sp>
+            </span>
+            <button class="btn btn-success mt-3" >See project</button>
             </div>
           </div>
   
@@ -144,12 +145,12 @@
 
     <section class="about-me container flex-column text-center mb-5">
       <div>
-        <h2>About me</h2>
-        <p> I can help you build a product , feature or website Look through
+        <h2 class="mb-3">About me</h2>
+        <p class="px-3"> I can help you build a product , feature or website Look through
           some of my work and experience! If you like what you see and have a
           project you need coded,
           don't hestiate to contact me.</p>
-        <button class="btn btn-success mb-3" style="width: 7rem;">Get My Resume</button>
+        <button class="btn btn-success mb-5">Get My Resume</button>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-3 mx-4">
@@ -171,11 +172,11 @@
               cap">
             <div class="card-body">
               <h5 class="card-title">Frameworks</h5>
-              <span class="badge bg-light">Bootstrap</span>
-              <span class="badge bg-light">Ruby on rails</span>
-              <span class="badge bg-light">RSpec</span>
-              <span class="badge bg-light">Capybara</span>
-              <span class="badge bg-light">Selenium</span>
+              <span class="badge bg-light mb-2">Bootstrap</span>
+              <span class="badge bg-light mb-2">Ruby on rails</span>
+              <span class="badge bg-light mb-2">RSpec</span>
+              <span class="badge bg-light mb-2">Capybara</span>
+              <span class="badge bg-light mb-2">Selenium</span>
             </div>
           </div>
         </div>
@@ -185,49 +186,64 @@
               cap">
             <div class="card-body">
               <h5 class="card-title">Skills</h5>
-              <span class="badge bg-light">Codekit</span>
-              <span class="badge bg-light">Codepen</span>
-              <span class="badge bg-light">Github</span>
-              <span class="badge bg-light">Codepen</span>
-              <span class="badge bg-light">Gitlab</span>
-              <span class="badge bg-light">Terminal</span>
+              <span class="badge bg-light mb-2">Codekit</span>
+              <span class="badge bg-light mb-2">Codepen</span>
+              <span class="badge bg-light mb-2">Github</span>
+              <span class="badge bg-light mb-2">Codepen</span>
+              <span class="badge bg-light mb-2">Gitlab</span>
+              <span class="badge bg-light mb-2">Terminal</span>
             </div>
           </div>
         </div>
       </div>
 
     </section>
-    <section class="container mb-5">
-      <div class="row justify-content-center">
+    <section class="container mb-5 contact">
+      <form class="row justify-content-center">
         <div class="col-md-4">
-          <h4> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h4>
+          <h3> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
         </div>
         <div class="col-md-6">
           <div class="mb-3 d-flex">
             <div>
-              <label for="first-name" class="form-label">Name</label>
+              <label for="first-name" class="form-label visually-hidden">First name</label>
             <input type="text" class="form-control" id="Firstname" placeholder="Your first name">
             </div>
-            <div>
-              <label for="Last-name" class="form-label">Email address</label>
+            <div class="mx-3">
+              <label for="Last-name" class="form-label visually-hidden">Last name</label>
             <input type="text" class="form-control" id="Last-name" placeholder=" your last name">
             </div>
             
           </div>
           <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <label for="exampleFormControlInput1" class="form-label visually-hidden">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <label for="exampleFormControlTextarea1" class="form-label visually-hidden">Example textarea</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
         </div>
-      </div>
+      </form>
 
 
     </section>
     <footer>
+      <div class="container social-media-icons">
+        <ul class="d-flex flex-row justify-content-center">
+          <li class="p-2"><img src="imgs/Github.svg" alt="Github icon" /></li>
+          <li class="p-2">
+            <img src="imgs/Linkedin.svg" alt="LinkedIn icon" />
+          </li>
+          <li class="p-2">
+            <img src="imgs/Angelist.svg" alt="Angelist icon" />
+          </li>
+          <li class="p-2">
+            <img src="imgs/Twitter.svg" alt="Twitter icon" />
+          </li>
+          <li class="p-2"><img src="imgs/Medium.svg" alt="Medium icon" /></li>
+        </ul>
+      </div>
 
     </footer>
 
