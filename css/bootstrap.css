@@ -11222,13 +11222,22 @@ li {
   width: 100%;
   height: auto;
 }
-.project-list li{
-  background-color: #Ebf0ee;
+
+.project-list li {
+  background-color: #ebf0ee;
   padding: 1rem;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   padding: 0.4rem !important;
+}
+.card {
+  background-color: #ebf0ee;
+}
+
+.badge {
+  font-size: 15px;
+  color: #36b37e;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
