@@ -11182,16 +11182,12 @@ a {
   text-decoration: none;
 }
 
-.navbar .nav-items {
-  padding-left: 2rem;
-}
-
-.container {
-  background-image: url(imgs/Headline-illustration.png);
+.headline {
+  background-image: url(/imgs/Header-llustration.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 112vh;
 }
 
 .headline h2 {
@@ -11209,6 +11205,30 @@ li {
 
 .p-2 {
   padding: 0 !important;
+}
+
+.px-3 {
+  padding: 0 6rem !important;
+}
+
+.pt-big {
+  padding-top: 6rem !important;
+}
+.project-card {
+  border: 1px solid #d0d9d4;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+.project-list li{
+  background-color: #Ebf0ee;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0.4rem !important;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
